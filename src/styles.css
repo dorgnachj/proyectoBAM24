@@ -1,0 +1,205 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color:  #516FA4;;
+}
+.logo{
+  color: aliceblue;
+}
+.logo img {
+  width: 100px;
+}
+
+nav {
+  
+  display: none; 
+}
+
+.nav-toggle-label {
+  cursor: pointer;
+}
+
+.nav-toggle-label .img-menu {
+  width: 60px; 
+  height: auto;
+  filter: invert(100%) sepia(100%) saturate(10000%) hue-rotate(0deg);
+}
+
+  
+
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin-bottom: 10px;
+}
+
+nav ul li:last-child {
+  margin-bottom: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+.nav-toggle:checked + nav {
+  display: block; 
+}
+.search-bar {
+  position: relative;
+  display: inline-block;
+  
+}
+
+.search-bar input[type="text"] {
+  padding-right: 50px;
+  border-radius: 30px;
+  padding: 15px;
+  width: 400px;
+  background-color: crimson;  
+  border: none;
+  
+}
+
+.search-bar .search-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px; 
+  height: 120%;
+  background: url('../public/search.png') no-repeat center center;
+  background-size: contain; 
+  margin-right: 10px; 
+  border: none;
+  cursor: pointer;  
+  filter: invert(100%) sepia(100%) saturate(10000%) hue-rotate(0deg);
+}
+
+
+
+.user-options a {
+  text-decoration: none;
+  color: hsl(210, 100%, 100%);
+  margin-right: 10px;
+}
+
+.user-options a:last-child {
+  margin-right: 0;
+}
+
+
+.banner {
+  position: relative; 
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner::before {
+  content: ""; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../public/no-bake-train-cake.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(2px); 
+  z-index: -1; 
+}
+
+.text-center {
+  font-size: 35px;
+  
+  color: rgb(6, 6, 6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 800px;
+  height: 250px;
+  text-align: center;
+}
+
+  
+  .productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 20px;
+    background-color: #516FA4;
+}
+
+.producto {
+  
+    text-align: center;    
+    padding: 20px; 
+}
+
+.producto img {
+  max-width: 100%; 
+  border-radius: 20px; 
+}
+.producto button {
+  background-color:crimson; 
+  color: white; 
+  border: none; 
+  padding: 10px 20px; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  margin-top: 20px;
+}
+
+
+.producto button:hover {
+  background-color: darkblue; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.producto img {
+    max-width: 100%; 
+}
+
+@media (max-width: 1024px) {
+    .productos {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 768px) {
+    .productos {
+        grid-template-columns: 1fr; 
+    }
+}
