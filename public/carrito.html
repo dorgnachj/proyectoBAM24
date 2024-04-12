@@ -11,6 +11,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css"> 
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -44,6 +58,37 @@
     </div>
 </header>
 
+<table>
+    <thead>
+        <tr>
+            <th>Producto</th>
+            <th>Precio</th>
+            <th>Cantidad</th>
+            <th>Subtotal</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Producto 1</td>
+            <td>$XX.XX</td>
+            <td><input type="number" value="1" size="2"><button>Actualizar</button></td>
+            <td>$XX.XX</td>
+        </tr>
+        <tr>
+            <td>Producto 2</td>
+            <td>$XX.XX</td>
+            <td>2</td>
+            <td>$XX.XX</td>
+        </tr>
+        <!-- Puedes agregar más filas según sea necesario -->
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3" style="text-align: right;"><strong>Total</strong></td>
+            <td>$XX.XX</td>
+        </tr>
+    </tfoot>
+</table>
 
 <footer>
     <div class="contact-info">

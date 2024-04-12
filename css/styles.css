@@ -208,22 +208,56 @@ display: flex;
 flex-direction: column;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .producto img {
     max-width: 100%; 
 }
+
+/*estilos de carrito*/
+
+/* Estilos para la tabla del carrito de compras */
+.carrito {
+  width: 100%; /* La tabla ocupa todo el ancho disponible */
+  border-collapse: collapse; /* Colapsa los bordes de las celdas */
+  display: flex; /* Utiliza flexbox para el diseño */
+  flex-direction: column; /* Organiza las filas verticalmente */
+  overflow-x: auto; /* Permite desplazamiento horizontal en pantallas pequeñas */
+}
+
+/* Estilos para los diferentes partes de la tabla */
+.carrito thead, .carrito tbody, .carrito tfoot {
+  display: block; /* Cada parte de la tabla se muestra como un bloque */
+}
+
+/* Estilos para el encabezado de la tabla */
+.carrito thead {
+  background-color: #f2f2f2; /* Color de fondo del encabezado */
+}
+
+/* Estilos para el cuerpo de la tabla */
+.carrito tbody {
+  flex: 1; /* El cuerpo de la tabla ocupa el espacio restante */
+}
+
+/* Estilos para las celdas de la tabla */
+.carrito th, .carrito td {
+  padding: 8px; /* Espaciado interno de las celdas */
+  border-bottom: 1px solid #ddd; /* Borde inferior de las celdas */
+}
+
+/* Estilos para el pie de página de la tabla */
+.carrito tfoot {
+  font-weight: bold; /* Texto en negrita para el pie de página */
+}
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 600px) {
+  .carrito thead {
+      display: none; /* Oculta el encabezado en pantallas pequeñas */
+  }
+}
+
+/* fin estilo  para carrito */
+
 
 @media (max-width: 1024px) {
     .productos {
