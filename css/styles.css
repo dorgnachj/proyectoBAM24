@@ -17,12 +17,15 @@ header {
   background-color: #FFF5ED;
 }
 .logo{
-  color:  rgb(147, 141, 141);  
+  /*color:  rgb(147, 141, 141);  */
     font-family: "Pacifico", cursive;
     font-size: 30px;
     font-weight: 600;
     font-style: normal;
-  
+  background: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  background-clip: text;
+  display: inline;
+  color: transparent;
     
     
   }
@@ -247,6 +250,10 @@ flex-direction: column;
 /* Estilos para el pie de página de la tabla */
 .carrito tfoot {
   font-weight: bold; /* Texto en negrita para el pie de página */
+}
+iframe {
+  width: 50%;
+  height: 50%;
 }
 
 /* Estilos para pantallas pequeñas */
