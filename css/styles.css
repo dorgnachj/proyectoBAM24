@@ -22,7 +22,7 @@ header {
     font-size: 30px;
     font-weight: 600;
     font-style: normal;
-  background: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  background: linear-gradient(to left, rgb(238, 130, 189), rgb(155, 49, 230), rgb(78, 168, 241), rgb(22, 173, 107), rgb(255, 255, 0), rgb(255, 0, 38), rgb(255, 0, 119));
   background-clip: text;
   display: inline;
   color: transparent;
@@ -53,7 +53,7 @@ nav {
 .nav-toggle-label .img-menu {
   width: 60px; 
   height: auto;
-  filter: invert(100%) sepia(100%) saturate(10000%) hue-rotate(0deg);
+  
 }
 
   
@@ -86,10 +86,25 @@ nav a {
 }
 .search-bar {
   position: relative;
-  display: inline-block;
+  /*display: inline-block;*/
   
 }
+.input-wrapper {
+  position: relative;
+  display: inline-block;
+}
 
+.input-text {
+  padding-left: 100px; /* Espacio para el icono */
+}
+
+.glass {
+  width: 25px;
+  position: absolute;
+  right: 10px; /* Ajusta la posición horizontal del icono dentro del input */
+  top: 50%;
+  transform: translateY(-50%);
+}
 .search-bar input[type="text"] {
   padding-right: 50px;
   border-radius: 30px;
@@ -143,15 +158,16 @@ nav a {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../public/no-bake-train-cake.jpg");
+  background-image: url("../recursos/train.png");
   background-repeat: no-repeat;
   background-size: cover;
-  filter: blur(2px); 
+  filter: blur(6px); 
   z-index: -1; 
 }
 
 .text-center {
   font-size: 35px;
+  
   
   color: rgb(90, 86, 86);
   display: flex;
@@ -168,6 +184,7 @@ nav a {
     grid-template-columns: repeat(3, 1fr); 
     grid-gap: 20px;
     background-color:#caffef;
+    padding-top: 50px;
 }
 
 .producto {
@@ -202,14 +219,58 @@ footer {
 .contact-info {
   display: flex;
   flex-direction: column;
+  color: rgb(88, 86, 86);
+  font-family: "Pacifico", cursive;
+  font-size: 20px;
+}
+
+.contact-item {
+  color: rgb(88, 86, 86);
+  font-family: "Pacifico", cursive;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  
+}
+.icon-contact{
+  width: 25px;
+}
+
+/*.contact-info {
+  display: flex;
+  flex-direction: column;
   color:  rgb(88, 86, 86);  
     font-family: "Pacifico", cursive;
     font-size: 20px;
-}
+}*/
 .social-media {
-display: flex;
-flex-direction: column;
+
+ display: flex;
+ flex-direction: column;
+ margin-top: 40px;
+ color:  rgb(88, 86, 86);  
+    font-family: "Pacifico", cursive;
+    font-size: 20px;
 }
+
+.social-media-icons {
+ 
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  margin-top: 40px; 
+
+}
+
+
+
+
+
+
+
+
+
+
 
 .producto img {
     max-width: 100%; 
